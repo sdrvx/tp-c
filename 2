@@ -1,0 +1,94 @@
+ex2 td tp
+#include <stdio.h>
+#include <stdlib.h>
+float ne1,ne2,ne3,ne4,no1,no2;
+int main()
+{
+    printf("veuillez saisir les 4 notes d ecrit :\n ");
+    scanf("%f %f %f %f",&ne1,&ne2,&ne3,&ne4);
+    printf("veuillez saisir les 2 notes d oral :\n ");
+    scanf("%f %f",&no1,&no2);
+    printf("le total de l ecrit est : %.2f\n ",ne1+ne2+ne3+ne4);
+    printf("la moyenne de l ecrit est : %.2f\n",(ne1+ne2+ne3+ne4)/4);
+    printf("le total d oral est : %.2f\n ",no1+no2);
+    printf("la moyenne de l ecrit est : %.2f\n ",(no1+no2)/2);
+    printf("le total de general est : %.2f\n ",ne1+ne2+ne3+ne4+no1+no2);
+    printf("la moyenne de l ecrit est : %.2f ",((ne1+ne2+ne3+ne4)/4)+((no1+no2)/2));
+    return 0;
+}
+
+
+avec 3 variables 
+#include <stdio.h>
+#include <stdlib.h>
+
+float net=0,n,not=0;
+int main()
+{
+    printf("veuillez saisir la premiere notes d ecrit :\n ");
+    scanf("%f",&n);
+    net=n+net;
+        printf("veuillez saisir la deuxieme notes d ecrit :\n ");
+    scanf("%f",&n);
+    net=n+net;
+        printf("veuillez saisir la troisieme notes d ecrit :\n ");
+    scanf("%f",&n);
+    net=net+n;
+        printf("veuillez saisir la quatrieme notes d ecrit :\n ");
+    scanf("%f",&n);
+    net=net+n;
+    printf("veuillez saisir la premiere note d oral :\n ");
+    scanf("%f",&n);
+    not=n+not;
+    printf("veuillez saisir la deuxieme note d oral :\n ");
+    scanf("%f",&n);
+    not=n+not;
+    printf("le total de l ecrit est : %.2f\n ",net);
+    printf("la moyenne de l ecrit est : %.2f\n",net/4);
+    printf("le total d oral est : %.2f\n ",not);
+    printf("la moyenne d oral est : %.2f\n ",not/2);
+    printf("le total de general est : %.2f\n ",not+net);
+    printf("la moyenne general est : %.2f ",(net+not)/6);
+
+    return 0;
+}
+
+exercice3 
+#include <stdio.h>
+#include <stdlib.h>
+int nbra,tva=20;
+float pht,ttc;
+int main()
+{
+printf("veuillez saisir pht : ");
+scanf("%f",&pht);
+printf("veuillez saisir le nombre darticle : ");
+scanf("%d",&nbra);
+ttc=pht*nbra*(1+tva/100);
+printf("le prix ttc est : %f ",ttc);
+
+    return 0;
+}
+
+
+ex4
+#include <stdio.h>
+#include <stdlib.h>
+float pp , pl;
+int nbrp , nbrl;
+
+int main()
+{
+printf("veuillez saisir le prix d une poule : ");
+scanf("%f",&pp);
+printf("veuillez saisir le nombre de poules : ");
+scanf("%d",&nbrp);
+printf("veuillez saisir le prix d un lapin : ");
+scanf("%f",&pl);
+printf("veuillez saisir le nombre de lapins : ");
+scanf("%d",&nbrl);
+printf("le capitale est: %.2f ",pp*nbrp+pl*nbrl);
+printf("le nombre de pattes est: %d ",nbrp*2+nbrl*4);
+
+    return 0;
+}
